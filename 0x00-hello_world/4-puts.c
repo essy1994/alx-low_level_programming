@@ -6,6 +6,7 @@
  */
 int main(void)
 {
+	
 	/*String initialization*/
 
 	char my_str[] = "\"Programming is like building a multilingual puzzle";
