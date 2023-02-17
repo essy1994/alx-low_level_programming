@@ -10,10 +10,10 @@
 int main(void)
 {
 	int n;
+	char* int_str;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char* int_str;
 
         int str_len = snprintf(NULL, 0, "%d", n);
 	int_str = malloc(str_len + 1);
