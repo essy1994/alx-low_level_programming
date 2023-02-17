@@ -10,28 +10,27 @@
 int main(void)
 {
 	int n;
-	char* int_str;
+	char *int_str;
 	int str_len;
 	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-        str_len = snprintf(NULL, 0, "%d", n);
+	str_len = snprintf(NULL, 0, "%d", n);
 	int_str = malloc(str_len + 1);
-	snprintf(int_str, str_len+1, "%d", n);
+	snprintf(int_str, str_len + 1, "%d", n);
 	last_digit = strlen(int_str) - 1;
 	if ((int)int_str[last_digit] > 5)
 	{
-		printf("Last digit of" "%d is" "%c and is greater than 5\n", n, int_str[last_digit]);
+		printf("Last digit of " "%d is " "%c and is greater than 5\n", n, int_str[last_digit]);
         }
-	else if((int)int_str[last_digit] ==0)
+	else if((int)int_str[last_digit] == 0)
 	{ 
-		printf("Last digit of" "%d is" "%c\n", n, int_str[last_digit]);
+		printf("Last digit of " "%d is " "%c\n" "and is 0", n, int_str[last_digit]);
 	}
-	else if(((int)int_str[last_digit]<6) && ((int)int_str[last_digit]!=0))
+	else if(((int)int_str[last_digit] < 6) && ((int)int_str[last_digit] != 0))
 	{ 
-		printf("Last digit of" "%d is" "%c\n", n, int_str[last_digit]); 
+		printf("Last digit of " "%d is " "%c\n", n, int_str[last_digit]); 
 	}
        return (0);
 
