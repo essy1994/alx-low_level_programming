@@ -13,13 +13,13 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char int_str[20];
+	char* int_str;
 
-	sprintf(int_str, "%d", n);
-        printf("%s", int_str);
-        int str_len = strlen(int_str);
-	int idx = str_len -1;
-	printf("Var: %c", int_str[idx]);
+        int str_len = snprintf(NULL, 0, "%d", n);
+	int_str = malloc(str_len + 1);
+	snprintf(int_str, str_len+1, "%d", n);
+	int last_digit = strlen(int_str) - 1;
+	printf("Var: %c", int_str[last_digit]);
 	return (0);
 
 }
