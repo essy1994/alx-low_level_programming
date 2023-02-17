@@ -11,14 +11,16 @@ int main(void)
 {
 	int n;
 	char* int_str;
+	int str_len;
+	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-        int str_len = snprintf(NULL, 0, "%d", n);
+        str_len = snprintf(NULL, 0, "%d", n);
 	int_str = malloc(str_len + 1);
 	snprintf(int_str, str_len+1, "%d", n);
-	int last_digit = strlen(int_str) - 1;
+	last_digit = strlen(int_str) - 1;
 	printf("Var: %c", int_str[last_digit]);
 	return (0);
 
