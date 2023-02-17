@@ -14,10 +14,12 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	char int_str[20];
+
 	sprintf(int_str, "%d", n);
-	int length_of_string = strlen(int_str);
-	int index_of_last = length_of_string - 1;
-	printf("Last digit: %c", int_str[index_of_last]);
+        printf("%s", int_str);
+        int str_len = strlen(int_str);
+	int idx = str_len -1;
+	printf("Var: %c", int_str[idx]);
 	return (0);
 
 }
