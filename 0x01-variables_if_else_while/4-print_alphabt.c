@@ -7,10 +7,11 @@
  **/
 int main(void)
 { 
-	char letter;
+	char letter = 'a';
 	while (letter != 'q' || letter != 'e')
 	{
 		putchar(letter);
+		letter ++;
 	}
 	putchar('\n');
 	return (0);
