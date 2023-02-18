@@ -7,7 +7,12 @@
  **/
 int main(void)
 {
-	char characters = "I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game";
-	putchar(characters);
+	int x;
+	//char lower_case;
+	for(x = 'a'; x <= 'z'; x++)
+	{
+		//lower_case = tolower(x);
+		putchar(x);
+	}
 	return (0);
 }
