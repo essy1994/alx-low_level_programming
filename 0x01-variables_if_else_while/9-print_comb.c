@@ -12,7 +12,8 @@ int main(void)
 	for (number = 0; number < 10; number++)
 	{
 		putchar('0' + number);
-		putchar(',' + ' ');
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
