@@ -6,17 +6,7 @@
  *    *    * Return: always returns 0
  *     *     *
  **/
-int _putchar(char character[])
+int _putchar(char c)
 {
-	/**character = "_putchar";
-	**/
-	int counter = 0;
-
-	while ((character[counter]) != '\0')
-	{
-		putchar(character[counter]);
-		counter++;
-	}
-	putchar('\n');
-	return (0);
+	return (write(1, &c, 1));
 }
