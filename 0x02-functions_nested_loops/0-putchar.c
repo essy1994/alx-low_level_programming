@@ -10,3 +10,10 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
+int main(void)
+{
+	char character = "_putchar";
+	_putchar(character);
+	return (0);
+}
