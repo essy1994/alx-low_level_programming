@@ -5,5 +5,5 @@
  *   *   * @c: parameter to compare
  *    *    * Return: 1 or 0
  **/
-int _putchar(char c);
+inline int _putchar(char c);
 #endif
