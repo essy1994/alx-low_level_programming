@@ -6,14 +6,15 @@
  *    *    * Return: always returns 0
  *     *     *
  **/
-int main(void)
+int _putchar(char character[])
 {
-	char string[] = "_putchar";
+	/**character = "_putchar";
+	**/
 	int counter = 0;
 
-	while ((string[counter]) != '\0')
+	while ((character[counter]) != '\0')
 	{
-		putchar(string[counter]);
+		putchar(character[counter]);
 		counter++;
 	}
 	putchar('\n');
