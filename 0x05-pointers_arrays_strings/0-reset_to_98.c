@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *  *  *  * main - entry point
- *   *   *   *
- *    *    *    * Return: always returns 0
- *     *     *     *
+ *  * reset_to_98 - resets value to 98
+ *   *
+ *    * @n: pointer integer
 **/
 void reset_to_98(int *n)
 {
