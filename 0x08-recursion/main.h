@@ -42,4 +42,10 @@ int _sqrt_recursion(int n);
  *   * @s: string to print
  **/
 void _print_rev_recursion(char *s);
+/**
+ *  * is_print_number - is prime or not
+ *   * @n: integer to compare
+ *    * Return: boolean
+ **/
+int is_prime_number(int n);
 #endif
