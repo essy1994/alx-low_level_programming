@@ -18,4 +18,10 @@ int _strlen_recursion(char *s);
  *    * Return: 1 or 0
 **/
 int _putchar(char c);
+/**
+ *  * factorial - return factorial
+ *   * @n: number to return
+ *    * Return: factorial or -1
+ **/
+int factorial(int n);
 #endif
