@@ -37,4 +37,9 @@ int _pow_recursion(int x, int y);
  *    * Return: int value
  **/
 int _sqrt_recursion(int n);
+/**
+ *  * _print_rev_recursion - prints reverse with recurse
+ *   * @s: string to print
+ **/
+void _print_rev_recursion(char *s);
 #endif
