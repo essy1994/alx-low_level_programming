@@ -26,4 +26,11 @@ char *_strdup(char *str);
  *     * Return: returns concated string
  **/
 char *str_concat(char *s1, char *s2);
+/**
+ *  * alloc_grid - creates 2d array
+ *   * @width: width of array
+ *    * @height: height of array
+ *     * Return: pointer of double array
+ **/
+int **alloc_grid(int width, int height);
 #endif
