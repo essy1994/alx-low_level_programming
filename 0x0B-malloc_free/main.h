@@ -19,4 +19,11 @@ int _putchar(char c);
  *    * Return: char to newly duplicated string
  **/
 char *_strdup(char *str);
+/**
+ *  * str_concat - concats strings
+ *   * @s1: string 1
+ *    * @s2: string 2
+ *     * Return: returns concated string
+ **/
+char *str_concat(char *s1, char *s2);
 #endif
