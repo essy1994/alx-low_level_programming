@@ -13,4 +13,10 @@ char *create_array(unsigned int size, char c);
  *    *    * Return: 1 or 0
  **/
 int _putchar(char c);
+/**
+ *  * _strdup - duplicates string
+ *   * @str: string to copy
+ *    * Return: char to newly duplicated string
+ **/
+char *_strdup(char *str);
 #endif
